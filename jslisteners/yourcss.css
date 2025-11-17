@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif ;
+}
+body{
+    min-height: 100vh;
+    background-color: #f3f3f3;
+}
+header{
+    background-color: rgb(49, 49, 248);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h2{
+    font-weight: 200;
+}
+.container{
+    max-width: 1200px;
+    min-height: 100vh;
+    padding: 10px;
+    margin: 0 auto;
+}
+.introduction{
+    border-radius: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 10px  rgba(17, 17, 17, 0.422);
+    margin-bottom: 2rem;
+ 
+}
+.introduction h2{
+    color: rgb(36, 36, 247);
+}
+.introduction span{
+    background-color: rgba(63, 61, 61, 0.992);
+    border-radius: 5px;
+    color: white;
+display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.card{
+ background-color: #ffffff;
+ color: white;
+ padding: 0px;
+ border-radius: 10px;
+ overflow: hidden;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+     box-shadow: 0 0 10px 10px  rgba(17, 17, 17, 0.422);
+
+}
+.card h2{
+    background-color: blue;
+    text-align: center;
+    padding: 20px;
+}
+.card-holder{
+     display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;    
+}
+.card-body{
+    min-height: 300px;
+    padding: 20px;
+}
+.card-button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Poppins";
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    font-size: large;
+}
+.loading{
+    position: fixed;
+  background: url(./—Pngtree—loading\ technology\ screen\ background_1181610.jpg);
+    top: 0;
+    background-position: center;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+
+}

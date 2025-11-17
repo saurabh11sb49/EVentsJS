@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INtro to JS event listener</title>
+    <link rel="stylesheet" href="./yourcss.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+   <header>
+    <h1>JavaScript Event Listeners</h1>
+    <h2>lets know about it</h2>
+   </header>
+
+   <div class="container">
+    <section class="introduction">
+        <h2>What is eventListener??</h2>
+        <p>Event listeners in JavaScript are functions that wait for a specific event to occur on a particular DOM element. When that event happens, the function is executed, allowing you to create interactive web pages.
+</p>
+<p>
+Events can be user interactions (clicks, key presses, mouse movements) or browser events (page load, resize, etc.).
+
+The basic syntax for adding an event listener is:</p>
+<span>element.addEventListener(event, function);</span>
+    </section>
+    <h2 style="color: blue;">some event listener</h2>
+    <div class="card-holder" id="card-container">
+            
+
+          <div class="card">
+            <div class="card-head"><h2>click</h2>
+            </div>
+            <div class="card-body"><button class="card-button" id="click" onclick="addContent()">Click</button>
+            <div id="contentOnClick" style="color: black;"></div>
+            </div>
+        </div>
+
+
+
+        <div class="card " id="doubleclick-card">
+            <div class="card-head"><h2>Double-click</h2>
+            </div>
+            <div class="card-body">
+                <button class="card-button" id="dblclick" >Click</button>
+                <div id="doubleclick"></div>
+            </div>
+        </div>
+
+
+        <div class="card" id="mouseover-card">
+    <div class="card-head"><h2>MouseOver</h2></div>
+    <div class="card-body" id="mouseover">hello</div>
+</div>
+
+
+       <div class="card" id="focus-card" >
+    <div class="card-head"><h2>Focus</h2></div>
+    <div class="card-body">
+        <input type="text" id="focus-input" placeholder="Click here">
+        <div id="focus-message"></div>
+    </div>
+</div>
+
+
+      <div class="card" id="scroll-card">
+    <div class="card-head"><h2>Scroll</h2></div>
+    <div class="card-body" id="scroll-body" style="height:150px; overflow:auto;">
+        <p>Line 1</p>
+        <p>Line 2</p>
+        <p>Line 3</p>
+        <p>Line 4</p>
+        <p>Line 5</p>
+        <p>Line 6</p>
+        <p>Line 7</p>
+        <p>Line 8</p>
+         <p>Line 1</p>
+        <p>Line 2</p>
+        <p>Line 3</p>
+        <p>Line 4</p>
+        <p>Line 5</p>
+        <p>Line 6</p>
+        <p>Line 7</p>
+        <p>Line 8</p>
+         <p>Line 1</p>
+        <p>Line 2</p>
+        <p>Line 3</p>
+        <p>Line 4</p>
+        <p>Line 5</p>
+        <p>Line 6</p>
+        <p>Line 7</p>
+        <p>Line 8</p>
+    </div>
+    <div id="scroll-message"></div>
+</div>
+
+        <div class="card">
+            <div class="card-head"><h2>other events</h2>
+            </div>
+            <div class="card-body" style="color: black;">
+                <ul>
+    <li>Mouse Events
+        <ul>
+            <li>click</li>
+            <li>dblclick</li>
+            <li>mousedown</li>
+            <li>mouseup</li>
+            <li>mouseover</li>
+            <li>mouseout</li>
+            <li>mousemove</li>
+            <li>contextmenu</li>
+        </ul>
+    </li>
+    <li>Keyboard Events
+        <ul>
+            <li>keydown</li>
+            <li>keyup</li>
+            <li>keypress</li>
+        </ul>
+    </li>
+    <li>Focus Events
+        <ul>
+            <li>focus</li>
+            <li>blur</li>
+        </ul>
+    </li>
+    <li>Form Events
+        <ul>
+            <li>submit</li>
+            <li>change</li>
+            <li>input</li>
+            <li>reset</li>
+        </ul>
+    </li>
+    <li>Window / Document Events
+        <ul>
+            <li>load</li>
+            <li>DOMContentLoaded</li>
+            <li>resize</li>
+            <li>scroll</li>
+            <li>beforeunload</li>
+        </ul>
+    </li>
+    <li>Drag & Drop Events
+        <ul>
+            <li>drag</li>
+            <li>dragstart</li>
+            <li>dragend</li>
+            <li>dragover</li>
+            <li>dragenter</li>
+            <li>dragleave</li>
+            <li>drop</li>
+        </ul>
+    </li>
+</ul>
+
+            </div>
+        </div>
+
+</div>
+      
+
+
+
+   </div>
+<div class="loading" id="load">
+
+</div>
+
+
+
+    <script src="./listener.js"></script>
+</body>
+</html>
